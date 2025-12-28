@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Turismo - NewCooltura Informada",
+  title: "Turismo Chile - SERNATUR | NewCooltura Informada",
   description: "Oficinas SERNATUR, destinos turisticos, calculadora de presupuesto y derechos del turista en Chile",
+  keywords: ["turismo Chile", "SERNATUR", "destinos turisticos", "viajes", "derechos turista"],
+  openGraph: {
+    title: "Turismo Chile - NewCooltura Informada",
+    description: "Destinos, SERNATUR y derechos del turista",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
